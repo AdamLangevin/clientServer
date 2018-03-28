@@ -31,27 +31,26 @@ var opts = {
 //execute SCP here?
 cl.scp(file, opts, (res, err) =>{
     if(err){
-          console.log('Error transfering file: ', err);
-	  return;
+        console.log('Error transfering file: ', err);
+	  		return;
     }
     console.log('Transfered file');
 
-    exec(prog, {
- 	user: 'py120',
-	host: '192.168.0.218',
-	port: '22',
-	password: 'Darkloli1'
+  	exec(prog, {
+		 	user: 'py120',
+			host: '192.168.0.218',
+			port: '22',
+			password: 'Darkloli1'
     }, (err, stdout, stderr) => {
 	  if(err) {
-		console.log('Error: ', err);
-		return;
+			console.log('Error: ', err);
+			return;
 	  }
 	  if(stderr) {
-		console.log('Something happened! ', stderr);
-		return;
+			console.log('Something happened! ', stderr);
+			return;
   	  }
   	  console.log('Executed: ', stdout);
     });
   });
 };
-
