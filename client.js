@@ -3,8 +3,8 @@ var express         = require('express');
 var app             = express();
 const { spawn }     = require('child_process');
 var bodyparser      = require('body-parser');
-var cl		    = require('scp2');
-var exec	    = require('ssh-exec');
+var cl		    			= require('scp2');
+var exec	    			= require('ssh-exec');
 
 //execute the raspberry still calls
 
