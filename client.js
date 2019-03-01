@@ -24,7 +24,7 @@ var opts = {
 	//host: '172.17.123.59',
 	host: '192.168.0.218',
 	port: '22',
-	password: 'Darkloli1',
+	password: '******',
 	path: 'c:/Users/py120/Desktop/Dev/robotServer/public/uploads'
 };
 
